@@ -1,0 +1,97 @@
+.App {
+  color: rgb(199, 199, 199);
+  text-align: center;
+  margin: 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F3904F;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3B4371, #F3904F);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3B4371, #F3904F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height: 100vh;
+
+  .container{
+    overflow: hidden;
+    display: flex;
+    margin-top: 2em;
+    flex-direction: column;
+    width: 30%;
+    height: 70vh;
+    background: rgba( 255, 255, 255, 0.10 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0.0px );
+    -webkit-backdrop-filter: blur( 0.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    align-items: center;
+    position: relative;
+    .continer-data{
+      margin-top: 2rem;
+      .temp-data{
+        font-size:2rem ;
+      }
+      .not-found{
+        font-size: 36px;
+      }
+      .temp-data-min {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.7rem;
+        margin-top: 1rem;
+      }
+      .img-size{
+        width: 60%;
+      
+      }
+      .extra-info{
+        font-size: 2rem;
+      }
+    }
+
+    
+    .search-div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+      width: 80%;
+      position: relative;
+      .input{
+        margin-right: 20px;
+        background: transparent;
+        border:1px solid white;
+        width: 90%;
+        height: 40px;
+        border-radius: 50px;
+        color: white;
+        font-size: 24px;
+        text-align: center;
+        &:focus{
+          outline: none;
+        }
+      
+      }
+      .icon-del{
+        font-family:monospace;
+        position: absolute;
+        font-size: 20px;
+        right: 10%;
+        font-size: 28px;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        align-items: center;
+        display: flex;
+        cursor: pointer;
+      }
+      }
+  }
+  
+  
+}
+
+
+
