@@ -1,7 +1,6 @@
 
 import { useEffect, useState } from 'react';
 import './App.scss';
-import CustomButton from './component/custom-button/custom-button.components';
 
 function App() {
   const [city, SetCity] = useState("mumbai");
@@ -36,7 +35,7 @@ function App() {
         <div className='continer-data'>
           {(!data) ? <div className='not-found'>city not found</div> : (<div className='content'>
             <h1 className='city'>{city}</h1>
-            {wht ? (<div><img className='img-size' src={`http://openweathermap.org/img/wn/${wht[0].icon}@2x.png`} alt='no image' />
+            {wht ? (<div><img className='img-size' src={`http://openweathermap.org/img/wn/${wht[0].icon}@2x.png`} alt='no' />
               <div style={{ fontSize: '28px' }}>{wht[0].main}</div></div>) : ''}
 
             <div className='temp-data'>{(data.temp - 273).toPrecision(4)} C</div>
