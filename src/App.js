@@ -15,9 +15,7 @@ function App() {
 
       SetData(responsejson.main);
       SetWht(responsejson.weather);
-      console.log(data);
-      console.log(city);
-      console.log(wht);
+
     };
 
     fetchapi();
