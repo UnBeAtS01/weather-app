@@ -8,7 +8,7 @@ function App() {
   const [wht, SetWht] = useState(null);
   useEffect(() => {
     const fetchapi = async () => {
-      const fetchval = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=983d484740046aed18fda0af06af3b69`
+      const fetchval = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=983d484740046aed18fda0af06af3b69`
       var response = await fetch(fetchval);
       var responsejson = await response.json();
 
